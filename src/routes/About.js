@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar } from './Nav';
+import { NavBar } from '../components/Nav';
 
 export const About = () => {
     return(

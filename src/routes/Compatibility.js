@@ -1,4 +1,4 @@
-import { NavBar } from "./Nav";
+import { NavBar } from '../components/Nav';
 
 export const Compatibility = () => {
     return (

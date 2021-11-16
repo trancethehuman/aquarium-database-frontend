@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/Home.css";
-import { NavBar } from './Nav';
+import { NavBar } from '../components/Nav';
 
 export const Home = () => {
     return (
