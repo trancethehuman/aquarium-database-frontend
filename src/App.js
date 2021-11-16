@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import React from 'react';
 import {
   BrowserRouter,
@@ -9,12 +9,16 @@ import {
 import {Home} from './routes/Home';
 import {About} from './routes/About';
 import {Browse} from './routes/Browse';
+import {BuildTank} from './routes/BuildTank';
+import {Compatibility} from './routes/Compatibility';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App"/>
       <Routes>
+        <Route exact path="/compatibility" element={<Compatibility/>}></Route>
+        <Route exact path="/tank" element={<BuildTank/>}></Route>
         <Route exact path="/about" element={<About/>}></Route>
         <Route exact path="/browse" element={<Browse/>}></Route>
         <Route exact path="/" element={<Home/>}></Route>

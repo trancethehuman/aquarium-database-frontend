@@ -1,12 +1,11 @@
-import React from 'react';
-import { NavBar } from './Nav';
+import { NavBar } from "./Nav";
 
-export const About = () => {
-    return(
+export const BuildTank = () => {
+    return (
         <div>
             <div className="headContainer">
                 <h1 className="header">Fish-O-Pedia 🐟</h1>
-                <h3 className="tagLine">About Us!</h3>
+                <h3 className="tagLine">Build Tank!</h3>
                 <NavBar />
             </div>
         </div>
