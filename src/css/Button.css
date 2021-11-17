@@ -7,3 +7,7 @@
     padding: 10px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.3)
 }
+
+.Button:hover {
+    background: #7ed1cd;
+}

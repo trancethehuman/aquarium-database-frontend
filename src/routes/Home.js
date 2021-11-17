@@ -18,7 +18,5 @@ export const Home = () => {
                 </form>
             </div>
         </div>
-
-        
     );
 }
