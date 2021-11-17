@@ -15,7 +15,7 @@ export const Home = () => {
                 <form className="search">
                     <input className="searchBar" type="text" placeholder="What are you looking for? 🐠" />
                     <input className="searchSubmit" type="submit" value="🔍" />
-                </form> 
+                </form>
             </div>
         </div>
 

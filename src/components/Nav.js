@@ -1,20 +1,14 @@
 import React from 'react';
+import { Button } from './Button';
 
+//Standard Nav Bar
 export const NavBar = () => {
     return (
         <nav className="nav">
-            <button className="navButton">
-                <a href="/browse">Browse Database</a>
-            </button>
-            <button className="navButton">
-                <a href="/about">About Us</a>
-            </button>
-            <button className="navButton">
-                <a href="/compatibility">Fish Compatibility</a>
-            </button>
-            <button className="navButton">
-                <a href="/tank">Build Tank</a>
-            </button>
+            <Button link='/browse' label='Browse Database'/>
+            <Button link='/about' label='About Us'/>
+            <Button link='/compatibility' label='Fish Compatibility'/>
+            <Button link='/tank' label='Build Tank'/>
         </nav>
     );
 }
