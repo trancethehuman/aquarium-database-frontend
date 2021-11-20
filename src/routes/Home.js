@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/Home.css";
-import { NavBar } from '../components/Nav';
+import { HomeNavBar } from '../components/HomeNavBar';
 
 export const Home = () => {
     return (
@@ -8,7 +8,7 @@ export const Home = () => {
             <div className="headContainer">
                 <h1 className="header">Fish-O-Pedia 🐟</h1>
                 <h3 className="tagLine">A fish & plant search tool</h3>
-                <NavBar />
+                <HomeNavBar />
             </div>
 
             <div className="searchContainer">
