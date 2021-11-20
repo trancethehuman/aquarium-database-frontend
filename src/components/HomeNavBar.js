@@ -9,11 +9,11 @@ export const HomeNavBar = () => {
         <div className='navBar'>
             <Logo />
             <h3 className="tagLine">A fish & plant search tool</h3>
-            <nav className="nav">
+            <nav className="navButtons">
                 <Button link='/browse' label='Browse Database'/>
-                <Button link='/about' label='About Us'/>
                 <Button link='/compatibility' label='Fish Compatibility'/>
                 <Button link='/tank' label='Build Tank'/>
+                <Button link='/about' label='About Us'/>
             </nav>
         </div>
     );
