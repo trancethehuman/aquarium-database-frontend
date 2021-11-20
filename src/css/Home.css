@@ -7,36 +7,4 @@ html {
     background-color: #BEE3DB;
 }
 
-.searchContainer {
-    margin-top: 10%;
-}
 
-.searchBar {
-    padding: 10px;
-    font-size: 17px;
-    font-family: Poppins;
-    border: 1px solid grey;
-    width: 35%;
-    border-radius: 20px;
-    background: #f1f1f1;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.3)
-}
-
-.searchSubmit {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    color: white;
-    background: #555B6E;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.3)
-}
-
-.searchSubmit:hover {
-    background: #7884ad;
-}
