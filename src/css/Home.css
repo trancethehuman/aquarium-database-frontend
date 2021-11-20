@@ -7,60 +7,8 @@ html {
     background-color: #BEE3DB;
 }
 
-.headContainer {
-    background-color: #FFD6BA;
-    width: 100%;
-    margin-left: -10px;
-    margin-top: -20px;
-}
-
-.header {
-    padding-top: 30px;
-    margin-bottom: 0;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
-}
-
-.tagLine {
-    margin-top: 0;
-    font-weight: 600;
-    text-shadow: 1px 2px 3px rgba(0,0,0,0.3)
-}
-
-nav {
-    margin-top: 30px;
-    padding-bottom: 20px;
-}
-
-nav a{
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.navButton {
-    border: none;
-    background: #89B0AE;
-    border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 10px;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.3)
-}
-
-.navButton:hover {
-    background: #7ed1cd;
-}
-
 .searchContainer {
     margin-top: 10%;
-}
-
-.search {
-    
 }
 
 .searchBar {

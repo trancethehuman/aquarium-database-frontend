@@ -1,14 +1,19 @@
 import React from 'react';
 import { Button } from './Button';
+import { Logo } from './Logo';
+import '../css/HomeNavBar.css';
 
 //Standard Nav Bar
 export const HomeNavBar = () => {
     return (
-        <nav className="nav">
-            <Button link='/browse' label='Browse Database'/>
-            <Button link='/about' label='About Us'/>
-            <Button link='/compatibility' label='Fish Compatibility'/>
-            <Button link='/tank' label='Build Tank'/>
-        </nav>
+        <div className='headContainer'>
+            <Logo />
+            <nav className="nav">
+                <Button link='/browse' label='Browse Database'/>
+                <Button link='/about' label='About Us'/>
+                <Button link='/compatibility' label='Fish Compatibility'/>
+                <Button link='/tank' label='Build Tank'/>
+            </nav>
+        </div>
     );
 }
