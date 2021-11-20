@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from './Button';
 
 //Standard Nav Bar
-export const NavBar = () => {
+export const HomeNavBar = () => {
     return (
         <nav className="nav">
             <Button link='/browse' label='Browse Database'/>
