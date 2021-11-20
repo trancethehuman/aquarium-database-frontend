@@ -1,8 +1,8 @@
-.headContainer {
+.navBar {
     background-color: #FFD6BA;
     width: 100%;
     height: 10em;
-    padding-bottom: 1em;
+    padding-top: 1.3em;
 }
 
 .tagLine {

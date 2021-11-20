@@ -6,7 +6,7 @@ import '../css/HomeNavBar.css';
 //Standard Nav Bar
 export const HomeNavBar = () => {
     return (
-        <div className='headContainer'>
+        <div className='navBar'>
             <Logo />
             <h3 className="tagLine">A fish & plant search tool</h3>
             <nav className="nav">
