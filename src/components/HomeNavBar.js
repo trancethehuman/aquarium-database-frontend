@@ -8,6 +8,7 @@ export const HomeNavBar = () => {
     return (
         <div className='headContainer'>
             <Logo />
+            <h3 className="tagLine">A fish & plant search tool</h3>
             <nav className="nav">
                 <Button link='/browse' label='Browse Database'/>
                 <Button link='/about' label='About Us'/>

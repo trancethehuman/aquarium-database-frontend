@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Logo.css';
+import logo from '../assets/Fish_O_Pedia_white.png';
 
 //Fish-O-Pedia Logo
 export const Logo = () => {
     return(
         <>
-            <h1 className="typedLogo">Fish-O-Pedia 🐟</h1>
-            <h3 className="tagLine">A fish & plant search tool</h3>
+            <Link to="/">
+                <img alt='Fish-O-Pedia' src={logo} className='Logo'/>
+            </Link>
         </>
     );
 };
