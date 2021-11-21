@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from './Button';
-import { Logo } from './Logo/Logo';
-import '../css/HomeNavBar.css';
+import { Button } from '../Button/Button';
+import { Logo } from '../Logo/Logo';
+import './HomeNavBar.css';
 
 //Standard Nav Bar
 export const HomeNavBar = () => {

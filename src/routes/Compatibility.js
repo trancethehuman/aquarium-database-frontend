@@ -1,4 +1,4 @@
-import { StandardNavBar } from '../components/StandardNavBar';
+import { StandardNavBar } from '../components/NavBar/StandardNavBar';
 
 export const Compatibility = () => {
     return (
