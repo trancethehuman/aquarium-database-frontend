@@ -7,7 +7,9 @@ export const Home = () => {
     return (
         <>
             <HomeNavBar />
-            <SearchBar />
+            <div className='HomeSearchBar'>
+                <SearchBar />
+            </div>
         </>
     );
 }
