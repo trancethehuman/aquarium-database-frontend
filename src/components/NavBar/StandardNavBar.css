@@ -3,13 +3,14 @@
     width: 100%;
     padding: 0.5em;
     margin: 0;
-    height: 3em;
+    height: 3.5em;
 }
 
 .LogoStandard {
-    display: inline-block;
+    padding: 0.5em;
+    float: left;
 }
 
 .SearchBarCompact {
-    display: inline-block;
+    float: left;
 }
