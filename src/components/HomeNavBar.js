@@ -7,7 +7,9 @@ import '../css/HomeNavBar.css';
 export const HomeNavBar = () => {
     return (
         <div className='navBar'>
-            <Logo />
+            <div className='LogoHome'>
+                <Logo />
+            </div>
             <h3 className="tagLine">A fish & plant search tool</h3>
             <nav className="navButtons">
                 <Button link='/browse' label='Browse Database'/>
