@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Logo.css';
-import logo from '../assets/Fish_O_Pedia_white.png';
+import './Logo.css';
+import logo from '../../assets/Fish_O_Pedia_white.png';
 
 //Fish-O-Pedia Logo
 export const Logo = () => {

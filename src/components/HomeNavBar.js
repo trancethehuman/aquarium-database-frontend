@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import { Logo } from './Logo';
+import { Logo } from './Logo/Logo';
 import '../css/HomeNavBar.css';
 
 //Standard Nav Bar

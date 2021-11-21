@@ -1,6 +1,6 @@
 import React from 'react';
-import '../css/SearchBar.css';
-import MagnifyingGlass from '../assets/Search_duotone_icon.svg'
+import './SearchBar.css';
+import MagnifyingGlass from '../../assets/Search_duotone_icon.svg';
 
 //Search Bar component. Used on StandardNavBar and anywhere you want
 export const SearchBar = () => {
