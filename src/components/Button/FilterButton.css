@@ -1,21 +1,21 @@
-.Button {
+.FilterButton {
     border: none;
     background: #89B0AE;
     border-radius: 20px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 10px;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.3)
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 
-.Button:hover {
+.FilterButton:hover {
     background: #7ed1cd;
 }
 
-nav a{
+a {
     font-family: Poppins;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.1em;
     color: white;
     text-decoration: none;
     margin-left: 10px;

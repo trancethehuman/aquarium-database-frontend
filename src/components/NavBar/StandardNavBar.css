@@ -14,3 +14,7 @@
 .SearchBarCompact {
     float: left;
 }
+
+.NavMenuButtons {
+    margin: 0.3em;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../Button/Button';
+import { MenuButton } from '../Button/MenuButton';
 import { Logo } from '../Logo/Logo';
 import './HomeNavBar.css';
 
@@ -12,10 +12,10 @@ export const HomeNavBar = () => {
             </div>
             <h3 className="tagLine">A fish & plant search tool</h3>
             <nav className="navButtons">
-                <Button link='/browse' label='Browse Database'/>
-                <Button link='/compatibility' label='Fish Compatibility'/>
-                <Button link='/tank' label='Build Tank'/>
-                <Button link='/about' label='About Us'/>
+                <MenuButton link='/browse' label='Browse Database'/>
+                <MenuButton link='/compatibility' label='Fish Compatibility'/>
+                <MenuButton link='/tank' label='Build Tank'/>
+                <MenuButton link='/about' label='About Us'/>
             </nav>
         </div>
     );
