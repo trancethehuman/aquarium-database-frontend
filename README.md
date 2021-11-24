@@ -1,3 +1,5 @@
 # Fish-O-Pedia!
 
-Created by Joel & Hai
+## Team
+- Back-end & subject matter expert: Joel Lake
+- Front-end: Hai Nghiem
