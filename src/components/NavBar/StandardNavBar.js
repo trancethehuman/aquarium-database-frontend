@@ -16,6 +16,7 @@ export const StandardNavBar = () => {
             </div>
             <div className='NavMenuButtons'>
                 <MenuButton label='Browse' link='/browse'/>
+                <MenuButton label='Compatibility' link='/compatibility'/>
                 <MenuButton label='Tank' link='/tank'/>
                 <MenuButton label='About' link='/about'/>
             </div>
