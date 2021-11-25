@@ -16,5 +16,7 @@
 }
 
 .NavMenuButtons {
+    padding-right: 1.8em;
     margin: 0.3em;
+    float: right;
 }

@@ -1,9 +1,9 @@
 import { StandardNavBar } from '../components/Bars/StandardNavBar';
 
-export const Compatibility = () => {
+export const Tank = () => {
     return (
         <>
             <StandardNavBar />
         </>
     );
-};
+}
