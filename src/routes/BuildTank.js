@@ -1,10 +1,9 @@
-import React from 'react';
 import { StandardNavBar } from '../components/NavBar/StandardNavBar';
 
-export const About = () => {
-    return(
+export const BuildTank = () => {
+    return (
         <>
-            <StandardNavBar/>
+            <StandardNavBar />
         </>
     );
 }

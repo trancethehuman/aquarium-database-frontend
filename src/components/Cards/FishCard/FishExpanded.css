@@ -1,0 +1,137 @@
+.fishCard {
+    margin: auto;
+    background: #ffc49d;
+    border-radius: 20px;
+    width: 93%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fishHeader {
+    grid-column: 1/3;
+}
+
+.fishImg {
+    margin-top: 40px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.fishName { 
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.subName {
+    font-size: 25px;
+    margin-top: 5px;
+    color: rgb(231, 231, 231);
+}
+
+.temperament {
+    margin: auto;
+    margin-top: 10%;
+    background: rgb(170, 253, 170);
+    width: 75%;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.temperament h2 {
+    margin-bottom: 5px;
+}
+
+.temperament h1 {
+    margin-top: 0;
+    font-weight: 800;
+}
+
+.fishFact {
+    margin: auto;
+    background: rgb(170, 227, 253);
+    width: 75%;
+    border-radius: 20px;
+    padding: 7px;
+    padding-top: 20px;
+    margin-top: 5%;
+}
+
+.infoSymbol {
+    vertical-align: middle;
+    display: inline;
+    width: 30px;
+    margin-right: 5px;
+}
+
+.fishFact h2 {
+    font-size: 25px;
+    vertical-align: middle;
+    display: inline;
+    margin-left: 5px;
+}
+
+.fishFact p {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.parameters {
+    margin: auto;
+    background: rgb(255, 147, 114);
+    width: 75%;
+    border-radius: 20px;
+    padding: 7px;
+    margin-top: 5%;
+}
+
+.parameters h2 {
+    margin-top: 10px;
+}
+
+.careLevel {
+    margin: auto;
+    background: rgb(197, 135, 255);
+    width: 75%;
+    border-radius: 20px;
+    padding: 7px;
+    margin-top: 5%;
+}
+
+.careLevel h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.careLevel h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.fishInfo {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgb(170, 227, 253);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.infoHeader {
+    grid-column: 1/4;
+}
+
+.fishSex {
+    grid-column: 2/4;
+    width: 70%;
+    margin: auto;
+}
