@@ -1,12 +1,25 @@
+import { useEffect, useState } from 'react';
 import './FishExpanded.css';
 import Espes from './Rasboras.jpg';
 
 export const FishExpanded = () => {
+
+    const [fishAPI, setFishAPI] = useState()
+
+    useEffect(() => {
+        fetch('http://localhost:3001/goldfish').then((res) => {
+            if (res.ok) {
+                console.log(res)
+                return res.json();
+            }
+        }).then(jsonResponse => setFishAPI(jsonResponse));
+    }, [])
+
     return (
         <div className='fishCard'>
             <div className='fishHeader'>
                 <img className='fishImg'src={Espes} alt='Espes Rasbora'/>
-                <h1 className='fishName'>Espe's Rasbora</h1>
+                <h1 className='fishName'>{fishAPI}</h1>
                 <h3 className='subName'>Tyranosaurous</h3>
             </div>
             <div className='fastFacts'>

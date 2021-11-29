@@ -1,16 +1,19 @@
 .fishCard {
     margin: auto;
-    background: #ffc49d;
+    background: #cdeee8;
     border-radius: 20px;
     width: 93%;
     margin-top: 3%;
     margin-bottom: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    filter: drop-shadow(5px 5px 5px rgb(100, 100, 100));
 }
 
 .fishHeader {
     grid-column: 1/3;
+    background: rgb(170, 253, 170);
+    border-radius: 20px 0 0 20px;
 }
 
 .fishImg {
