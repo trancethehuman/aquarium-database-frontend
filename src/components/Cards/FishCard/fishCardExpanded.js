@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './FishExpanded.css';
-import Espes from './Rasboras.jpg';
 
 export const FishExpanded = () => {
 
@@ -14,64 +13,68 @@ export const FishExpanded = () => {
             }
         }).then(jsonResponse => setFishAPI(jsonResponse));
     }, [])
-
-    return (
-        <div className='fishCard'>
-            <div className='fishHeader'>
-                <img className='fishImg'src={Espes} alt='Espes Rasbora'/>
-                <h1 className='fishName'>{fishAPI}</h1>
-                <h3 className='subName'>Tyranosaurous</h3>
+    
+    if (fishAPI) {
+        return (
+            <div className='fishCard'>
+                <div className='fishHeader'>
+                    <img className='fishImg'src={fishAPI.pic1} alt='Espes Rasbora'/>
+                    <h1 className='fishName'>{fishAPI.name}</h1>
+                    <h3 className='subName'>{fishAPI.scientificName}</h3>
+                </div>
+                <div className='fastFacts'>
+                    <div className='temperament'>
+                        <h2>{fishAPI.temperament}</h2>
+                        <h1></h1>
+                    </div>
+                    <div className='parameters'>
+                        <h2>Water Parameters</h2>
+                        <p>Temperature: <b>{fishAPI.tempLowC}°C</b> - <b>{fishAPI.tempHighC}°C</b></p>
+                        <p>pH Level: <b>{fishAPI.phLevelLow}</b> - <b>{fishAPI.phLevelHigh}</b></p>
+                        <p>dH Level: <b>{fishAPI.dhLevelLow}°</b> - <b>{fishAPI.dhLevelHigh}°</b></p>
+                    </div>
+                    <div className='careLevel'>
+                        <h2>Care level</h2>
+                        <h1>{fishAPI.careLevel}</h1>
+                    </div>
+                </div>
+                <div className='fishInfo'>
+                    <div className='infoHeader'>
+                        <h2>Fish Information</h2>
+                    </div>
+                    <div>
+                        <h3>Size</h3>
+                        <p><b>{fishAPI.sizeCM} cm</b> ({fishAPI.sizeIN} in)</p>
+                    </div>
+                    <div>
+                        <h3>Diet Type</h3>
+                        <p>{fishAPI.dietType}</p>
+                    </div>
+                    <div>
+                        <h3>Origin</h3>
+                        <p>{fishAPI.origin}</p>
+                    </div>
+                    <div>
+                        <h3>Minimum Tank Size</h3>
+                        <p><b>{fishAPI.tankSizeL} L</b> ({fishAPI.tankSizeG} G)</p>
+                    </div>
+                    <div>
+                        <h3>Plants?</h3>
+                        <p>{fishAPI.plants}</p>
+                    </div>
+                    <div>
+                        <h3>Lifespan</h3>
+                        <p>{fishAPI.lifespan} years</p>
+                    </div>
+                </div>    
             </div>
-            <div className='fastFacts'>
-                <div className='temperament'>
-                    <h2>Temperament</h2>
-                    <h1>Peaceful 😌</h1>
-                </div>
-                <div className='fishFact'>
-                    <img className='infoSymbol' src="https://img.icons8.com/ios-filled/50/4a90e2/info.png"/>
-                    <h2>Fact</h2>
-                    <p>The Espe's Rasbora is an adorable little cyprinid originating from overgrown jungle streams!</p>
-                </div>
-                <div className='parameters'>
-                    <h2>Water Parameters</h2>
-                    <p>Temperature: <b>22.8 to 26.7° C</b></p>
-                    <p>pH Level: <b>6.0-8.0</b></p>
-                    <p>dH Level: <b>1 - 15 dGH</b></p>
-                </div>
-                <div className='careLevel'>
-                    <h2>Care level</h2>
-                    <h1>Easy ✅</h1>
-                </div>
+        )
+    } else {
+        return (
+            <div>
+                <h1>Catching fish!</h1>
+                <h2>Please wait a moment...</h2>
             </div>
-            <div className='fishInfo'>
-                <div className='infoHeader'>
-                    <h2>Fish Information</h2>
-                </div>
-                <div>
-                    <h3>Size</h3>
-                    <p>3.0 cm (1.2 inches)</p>
-                </div>
-                <div>
-                    <h3>Diet Type</h3>
-                    <p>Omnivore</p>
-                </div>
-                <div>
-                    <h3>Food</h3>
-                    <p>Flake and livefood</p>
-                </div>
-                <div>
-                    <h3>Minimum Tank Size</h3>
-                    <p>10 gallons</p>
-                </div>
-                <div>
-                    <h3>Plants?</h3>
-                    <p>Yes!</p>
-                </div>
-                <div>
-                    <h3>Lifespan</h3>
-                    <p>3 years</p>
-                </div>
-            </div>    
-        </div>
-    )
+        )
+    }
 }
