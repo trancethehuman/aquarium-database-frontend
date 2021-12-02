@@ -1,10 +1,12 @@
 import React from 'react';
 import { MenuButton } from '../Button/MenuButton';
+import LoginButton from '../Button/LoginButton';
 import { Logo } from '../Logo/Logo';
 import './HomeNavBar.css';
 
 //Standard Nav Bar
 export const HomeNavBar = () => {
+
     return (
         <div className='navBar'>
             <div className='LogoHome'>
@@ -16,6 +18,7 @@ export const HomeNavBar = () => {
                 <MenuButton link='/compatibility' label='Fish Compatibility'/>
                 <MenuButton link='/tank' label='Build Tank'/>
                 <MenuButton link='/about' label='About Us'/>
+                <LoginButton />
             </nav>
         </div>
     );
