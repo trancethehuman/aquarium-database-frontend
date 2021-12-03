@@ -1,0 +1,89 @@
+.fishCard {
+    margin: auto;
+    background: #fcbc91;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fishPic {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.fishNames {
+    width: 90%;
+    margin: auto;
+    margin-top: 1vw;
+    background: #7cb6ab;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.name {
+    padding-top: 1vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.sciName {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 1vw;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+}
+
+.fishInfo {
+    margin: auto;
+    width: 80%;
+    background: #fca063;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.sizeContainer {
+
+}
+
+.sizeHeader {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(230, 230, 230);
+}
+
+.fishSize {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.careContainer {
+
+}
+
+.careHeader {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(230, 230, 230);
+}
+
+.fishCare {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
