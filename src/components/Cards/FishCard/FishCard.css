@@ -1,4 +1,4 @@
-.fishCard {
+.fishCardBrowse {
     margin: auto;
     background: #fcbc91;
     border-radius: 20px;
@@ -7,7 +7,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.fishPic {
+.fishCardPic {
     width: 300px;
     height: 200px;
     margin: 20px;
@@ -16,7 +16,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.fishNames {
+.fishCardNames {
     width: 90%;
     margin: auto;
     margin-top: 1vw;
@@ -41,7 +41,7 @@
     color: rgb(230, 230, 230);
 }
 
-.fishInfo {
+.fishCardInfo {
     margin: auto;
     width: 80%;
     background: #fca063;

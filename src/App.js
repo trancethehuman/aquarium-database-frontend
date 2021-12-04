@@ -8,7 +8,7 @@ import {
 
 import {Home} from './routes/Home';
 import {About} from './routes/About';
-import {Browse} from './routes/Browse';
+import {Browse} from './routes/Browse/Browse.js';
 import {BuildTank} from './routes/BuildTank';
 import {Compatibility} from './routes/Compatibility';
 import {FishPage} from './routes/FishPage';

@@ -6,14 +6,14 @@ import LoginButton from '../Button/LoginButton';
 import './StandardNavBar.css'
 
 //Nav Bar to be used on all pages other than the homepage
-export const StandardNavBar = () => {
+export const StandardNavBar = ({getSearchTerm}) => {
     return(
         <div className='NavContainer'>
             <div className='LogoStandard'>
                 <LogoCompact />
             </div>
             <div className='SearchBarCompact'>
-                <SearchBarCompact/>
+                <SearchBarCompact getSearchTerm={getSearchTerm}/>
             </div>
             <div className='NavMenuButtons'>
                 <MenuButton label='Browse' link='/browse'/>
