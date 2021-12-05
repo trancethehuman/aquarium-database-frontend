@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { StandardNavBar } from '../../components/NavBar/StandardNavBar';
 import FishCard from '../../components/Cards/FishCard/FishCard';
+import FilterBar from '../../components/Bars/FilterBar';
 import './browse.css';
 
 export const Browse = () => {
 
     const [fishAPI, setFishAPI] = useState()
     const [searchTerm, setSearchTerm] = useState("");
+    const [filterCriterion, setFilterCriterion] = useState("");
 
     useEffect(() => {
         fetch('http://localhost:3001/goldfish').then((res) => {
@@ -21,6 +23,11 @@ export const Browse = () => {
         setSearchTerm(searchTerm);
     }
 
+    const getFilterCriterion = (criterion) => {
+        setFilterCriterion(criterion);
+        console.log(criterion)
+    }
+
     if (fishAPI) {
 
         return(
@@ -30,6 +37,10 @@ export const Browse = () => {
                 </div>
                 
                 <br />
+
+                <div>
+                    <FilterBar getFilterCriterion={getFilterCriterion}/>
+                </div>
                 
                 <div className='fishCardGrid'>
                     {fishAPI.filter((fishData) => {
