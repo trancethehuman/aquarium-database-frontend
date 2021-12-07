@@ -16,7 +16,7 @@ export const HomeNavBar = () => {
             <nav className="navButtons">
                 <MenuButton link='/browse' label='Browse Database'/>
                 <MenuButton link='/compatibility' label='Fish Compatibility'/>
-                <MenuButton link='/tank' label='Build Tank'/>
+                <MenuButton link='/tank' label='Tank Size'/>
                 <MenuButton link='/about' label='About Us'/>
                 <LoginButton />
             </nav>

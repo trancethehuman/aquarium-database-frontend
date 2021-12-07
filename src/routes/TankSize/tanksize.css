@@ -1,0 +1,70 @@
+.tankSizeHeader button {
+    color: white;
+    display: inline-block;
+    border: none;
+    background: #89B0AE;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.subHeader {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    margin-right: 0.25em;
+}
+
+.inputContainer input {
+    margin: auto;
+    margin-bottom: 1em;
+    display: inline-block;
+    height: 2.8em;
+    font-size: 1.3em;
+    font-family: Poppins;
+    border: 1px solid grey;
+    width: 15%;
+    border-radius: 20px;
+    background: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3)
+}
+
+.length {
+
+}
+
+.width {
+
+}
+
+.depth {
+
+}
+
+.unit {
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.outputContainer button{
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background: #89B0AE;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.unitSwitch button {
+
+}

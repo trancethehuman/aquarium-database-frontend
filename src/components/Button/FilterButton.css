@@ -1,10 +1,10 @@
 .FilterButton {
     border: none;
-    background: #89B0AE;
-    border-radius: 20px;
+    background: #eeeeee;
+    border-radius: 25px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 
@@ -12,11 +12,11 @@
     background: #7ed1cd;
 }
 
-a {
+.FilterButton p {
     font-family: Poppins;
     font-weight: 600;
     font-size: 1.1em;
-    color: white;
+    color: rgb(109, 109, 109);
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;

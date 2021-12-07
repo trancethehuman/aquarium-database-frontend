@@ -9,7 +9,7 @@ import {
 import {Home} from './routes/Home';
 import {About} from './routes/About';
 import {Browse} from './routes/Browse/Browse.js';
-import {Tank} from './routes/Tank';
+import {Tank} from './routes/TankSize/Tank.js';
 import {Compatibility} from './routes/Compatibility';
 import {FishPage} from './routes/FishPage';
 

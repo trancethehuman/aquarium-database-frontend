@@ -3,10 +3,10 @@ import { FilterButton } from "../Button/FilterButton"
 const FilterBar = ({getFilterCriterion}) => {
     return (
         <div>
-            <FilterButton label='Corydora' filterCriterion='Cory' getFilterCriterion={getFilterCriterion}/>
-            <FilterButton label='Plant Compatible' filterCriterion='Yes' getFilterCriterion={getFilterCriterion}/>
-            <FilterButton label='Carnivore' filterCriterion='Carnivore' getFilterCriterion={getFilterCriterion}/>
-            <FilterButton label='Difficult' filterCriterion='Difficult' getFilterCriterion={getFilterCriterion}/>
+            <FilterButton label='Beginner' filterCriterion='beginner' getFilterCriterion={getFilterCriterion}/>
+            <FilterButton label='Intermediate' filterCriterion='intermediate' getFilterCriterion={getFilterCriterion}/>
+            <FilterButton label='Difficult' filterCriterion='difficult' getFilterCriterion={getFilterCriterion}/>
+            <FilterButton label='Plant Compatible' filterCriterion='yes' getFilterCriterion={getFilterCriterion}/>
         </div>
     )
 }

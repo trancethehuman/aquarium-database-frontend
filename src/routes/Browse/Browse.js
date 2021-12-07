@@ -16,7 +16,9 @@ export const Browse = () => {
                 console.log(res)
                 return res.json();
             }
-        }).then(jsonResponse => setFishAPI(jsonResponse));
+        }).then(jsonResponse => {
+            setFishAPI(jsonResponse)
+        });
     }, [])
 
     const getSearchTerm = (searchTerm) => {
@@ -44,11 +46,14 @@ export const Browse = () => {
                 
                 <div className='fishCardGrid'>
                     {fishAPI.filter((fishData) => {
-                        if (searchTerm === "") {
+                        if (fishData.careLevel.toLowerCase().includes(filterCriterion.toLowerCase())) {
                             return fishData;
-                        } else if (fishData.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        } else if (fishData.plants.toLowerCase() === filterCriterion.toLowerCase()) {
                             return fishData;
                         }
+                        // } else if (fishData.name.toLowerCase() === cory.toLowerCase()) {
+                        //     return fishData;
+                        // }
                     }).map((fishData, index) => (
                         <FishCard fishData={fishData} key={index} />
                     ))}

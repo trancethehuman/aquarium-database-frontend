@@ -1,5 +1,6 @@
 import React from "react";
 import './FishCard.css';
+import FavouritesButton from '../../Button/FavouritesButton';
 
 const FishCard = ({ fishData }) => {
 
@@ -11,6 +12,7 @@ const FishCard = ({ fishData }) => {
             <div className='fishCardNames'>
                 <h1 className='name'>{fishData.name}</h1>
                 <h2 className='sciName'>{fishData.scientificName}</h2>
+                <FavouritesButton fishData={fishData}/>
             </div>
             <div className='fishCardInfo'>
                 <div className='sizeContainer'>
