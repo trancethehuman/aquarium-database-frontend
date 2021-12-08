@@ -12,6 +12,7 @@ import {Browse} from './routes/Browse/Browse.js';
 import {Tank} from './routes/TankSize/Tank.js';
 import {Compatibility} from './routes/Compatibility';
 import {FishPage} from './routes/FishPage';
+import FavList from './routes/FavList';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route exact path="/about" element={<About/>}></Route>
         <Route exact path="/browse" element={<Browse/>}></Route>
         <Route exact path="/fish" element={<FishPage/>}></Route>
+        <Route exact path="/favlist" element={<FavList/>}></Route>
         <Route exact path="/" element={<Home/>}></Route>
       </Routes>
     </BrowserRouter>

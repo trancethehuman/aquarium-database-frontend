@@ -50,10 +50,9 @@ export const Browse = () => {
                             return fishData;
                         } else if (fishData.plants.toLowerCase() === filterCriterion.toLowerCase()) {
                             return fishData;
+                        } else {
+                            return fishData;
                         }
-                        // } else if (fishData.name.toLowerCase() === cory.toLowerCase()) {
-                        //     return fishData;
-                        // }
                     }).map((fishData, index) => (
                         <FishCard fishData={fishData} key={index} />
                     ))}
