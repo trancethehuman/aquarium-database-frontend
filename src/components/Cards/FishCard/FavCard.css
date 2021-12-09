@@ -1,0 +1,20 @@
+.favCard {
+    background: rgb(248, 207, 132);
+    width: 35%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.favPic {
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+.favName {
+    display: inline-block;
+    margin-left: 10px;
+}

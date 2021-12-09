@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useAuth0 } from "@auth0/auth0-react"
+import { FavCard } from "../components/Cards/FishCard/FavCard"
+import { StandardNavBar } from '../components/Bars/StandardNavBar';
 
 const FavList = () => {
     const { user, isAuthenticated } = useAuth0()
@@ -33,10 +35,12 @@ const FavList = () => {
 
     return(
         <div>
+            <StandardNavBar />
+
             <h1>My Favorites</h1>
             {!isAuthenticated && <p>Catching your favorite fish...</p>}
             {isAuthenticated && userFavs && userFavs.map((userData, index) => (
-                <img src={userData.pic}/>
+                <FavCard userData={userData} key={index}/>
             ))}
         </div>
     )

@@ -14,7 +14,6 @@ import {Compatibility} from './routes/Compatibility';
 import {FishPage} from './routes/FishPage';
 import FavList from './routes/FavList';
 
-
 const App = () => {
   return (
     <BrowserRouter>
