@@ -4,10 +4,10 @@ import FishCard from '../../components/Cards/FishCard/FishCard';
 import FilterBar from '../../components/Bars/FilterBar';
 import './browse.css';
 
-export const Browse = () => {
+export const Browse = ({ searchTerm, getSearchTerm }) => {
 
     const [fishAPI, setFishAPI] = useState()
-    const [searchTerm, setSearchTerm] = useState();
+    // const [searchTerm, setSearchTerm] = useState();
     const [filterCriterion, setFilterCriterion] = useState();
 
     useEffect(() => {
@@ -21,14 +21,14 @@ export const Browse = () => {
         });
     }, [])
 
-    const getSearchTerm = (searchTerm) => {
-        setFilterCriterion()
-        console.log(searchTerm)
-        setSearchTerm(searchTerm);
-    }
+    // const getSearchTerm = (searchTerm) => {
+    //     setFilterCriterion()
+    //     console.log(searchTerm)
+    //     setSearchTerm(searchTerm);
+    // }
 
     const getFilterCriterion = (criterion) => {
-        setSearchTerm()
+        // setSearchTerm()
         setFilterCriterion(criterion);
         console.log(criterion)
     }
