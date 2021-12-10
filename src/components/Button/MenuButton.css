@@ -10,6 +10,7 @@
 
 .MenuButton:hover {
     background: #7ed1cd;
+    cursor: pointer;
 }
 
 a {

@@ -1,14 +1,14 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import './LoginButton.css';
+import { MenuButton } from "./MenuButton";
 
 const LoginButton = () => {
     const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
     if (isAuthenticated) {
-        return <button className='LoginButton' onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>
+        return <MenuButton label='Logout' action={() => logout({ returnTo: window.location.origin })}/>
     } else {
-        return <button className='LoginButton' onClick={() => loginWithRedirect()}>Log In</button>
+        return <MenuButton label='Login' action={() => loginWithRedirect()}/>
     }   
 }
     
