@@ -1,5 +1,5 @@
 import './css/App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter,
   Route,
@@ -14,19 +14,26 @@ import {Compatibility} from './routes/Compatibility';
 import {FishPage} from './routes/FishPage';
 import FavList from './routes/FavList';
 
-
 const App = () => {
+
+  const [searchTerm, setSearchTerm] = useState();
+
+  const getSearchTerm = (search) => {
+    setSearchTerm(search)
+    console.log(searchTerm)
+  }
+
   return (
     <BrowserRouter>
       <div className="App"/>
       <Routes>
         <Route exact path="/compatibility" element={<Compatibility/>}></Route>
-        <Route exact path="/tank" element={<Tank/>}></Route>
+        <Route exact path="/tank" element={<Tank getSearchTerm={getSearchTerm}/>}></Route>
         <Route exact path="/about" element={<About/>}></Route>
-        <Route exact path="/browse" element={<Browse/>}></Route>
+        <Route exact path="/browse" element={<Browse getSearchTerm={getSearchTerm} searchTerm={searchTerm}/>}></Route>
         <Route exact path="/fish" element={<FishPage/>}></Route>
         <Route exact path="/favlist" element={<FavList/>}></Route>
-        <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/" element={<Home getSearchTerm={getSearchTerm}/>}></Route>
       </Routes>
     </BrowserRouter>
   );
