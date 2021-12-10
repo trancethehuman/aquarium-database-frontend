@@ -2,7 +2,7 @@ import './MenuButton.css';
 import React from 'react';
 
 // Base design for all buttons. Button variations should be from here.
-// Takes a label, an onClick action, and a Link if there's any
+// Takes a label, an onClick action (use "action" as prop), and a Link if there's any
 export const MenuButton = ({label, action, link}) => {
 
     return(

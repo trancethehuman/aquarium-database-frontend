@@ -25,7 +25,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="App"/>
       <Routes>
         <Route exact path="/compatibility" element={<Compatibility/>}></Route>
         <Route exact path="/tank" element={<Tank getSearchTerm={getSearchTerm}/>}></Route>

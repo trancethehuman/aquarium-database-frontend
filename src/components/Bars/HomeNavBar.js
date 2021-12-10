@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginButton from '../Button/LoginButton';
+import {AuthenticationButton} from '../Button/Authentication/AuthenticationButton';
 import { MenuButton } from '../Button/MenuButton';
 import { Logo } from '../Logo/Logo';
 import './HomeNavBar.css';
@@ -15,9 +15,9 @@ export const HomeNavBar = () => {
             <nav className="navButtons">
                 <MenuButton link='/browse' label='Browse Database'/>
                 <MenuButton link='/compatibility' label='Fish Compatibility'/>
-                <MenuButton link='/tank' label='Build Tank'/>
                 <MenuButton link='/about' label='About Us'/>
-                <LoginButton />
+                <MenuButton link='/tank' label='Build Tank'/>
+                <AuthenticationButton />
             </nav>
         </div>
     );

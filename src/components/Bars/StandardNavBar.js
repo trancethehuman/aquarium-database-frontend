@@ -2,9 +2,8 @@ import React from 'react';
 import { LogoCompact } from '../Logo/LogoCompact';
 import { SearchBarCompact } from '../SearchBar/SearchBarCompact';
 import { MenuButton } from '../Button/MenuButton';
-import LoginButton from '../Button/LoginButton';
+import {AuthenticationButton} from '../Button/Authentication/AuthenticationButton';
 import './StandardNavBar.css';
-
 
 //Nav Bar to be used on all pages other than the homepage
 export const StandardNavBar = ({getSearchTerm}) => {
@@ -21,7 +20,7 @@ export const StandardNavBar = ({getSearchTerm}) => {
                 <MenuButton label='Compatibility' link='/compatibility'/>
                 <MenuButton label='Tank' link='/tank'/>
                 <MenuButton label='About' link='/about'/>
-                <LoginButton />
+                <AuthenticationButton />
             </div>
         </div>
     )
