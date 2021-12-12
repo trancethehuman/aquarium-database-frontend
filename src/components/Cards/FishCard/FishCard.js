@@ -4,7 +4,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import FavoritesButton from '../../Button/FavoritesButton';
 
 const FishCard = ({ fishData }) => {
-
+    console.log(fishData)
     const { isAuthenticated } = useAuth0()
 
     return (

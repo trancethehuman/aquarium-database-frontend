@@ -1,7 +1,6 @@
 import './FavCard.css'
 
 export const FavCard = ({ userData }) => {
-    
     return (
         <div className='favCard'>
             <img className='favPic' src={userData.pic}/>
